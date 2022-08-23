@@ -9,6 +9,9 @@
                     <a href="{{ route('admin.posts.create') }}" class="btn btn-primary">
                         Crea nuovo post
                     </a>
+                    <a href="{{ route('admin.users.index') }}" class="btn btn-primary">
+                        Visualizza gli Utenti
+                    </a>
                 </div>
                 <table class="table">
                     <thead>

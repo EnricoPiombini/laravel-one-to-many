@@ -33,6 +33,13 @@ Route::get('/test', 'HomeController@test')->name('test');
 // Route::get('/post{post}/edit', 'HomeController@index')->name('posts.edit');
 
 Route::get("/users", "UserController@index")->name("users.index");
+Route::patch("/users{user}", "UserController@update")->name("users.update");
+Route::get("/users{user}/edit", "UserController@edit")->name("users.edit");
+
+
+
+
+
 
 Route::resource('posts', 'PostController');
 
