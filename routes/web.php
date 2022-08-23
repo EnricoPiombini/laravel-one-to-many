@@ -32,6 +32,8 @@ Route::get('/test', 'HomeController@test')->name('test');
 // Route::get('/post/create', 'HomeController@test')->name('posts.create');
 // Route::get('/post{post}/edit', 'HomeController@index')->name('posts.edit');
 
+Route::get("/users", "UserController@index")->name("users.index");
+
 Route::resource('posts', 'PostController');
 
 });
